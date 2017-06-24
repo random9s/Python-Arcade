@@ -12,9 +12,9 @@ def get_events(paddle):
             sys.exit()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                paddle.inc_change(-6)
+                paddle.inc_change(-8)
             elif event.key == pygame.K_RIGHT:
-                paddle.inc_change(6)
+                paddle.inc_change(8)
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT:
                 paddle.inc_change(0)

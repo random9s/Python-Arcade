@@ -6,12 +6,12 @@ import pong_sound
 import time
 
 def set_screen(play1, play2, screen):
-    screen.fill(pong_colors.BLACK)
-    pong_score.getNet(pong_colors.GREEN, screen)
-    pong_score.getScorePlayer1(play1.score, pong_colors.WHITE, screen)
-    pong_score.getScorePlayer2(play2.score, pong_colors.WHITE, screen)
+        screen.fill(pong_colors.BLACK)
+        pong_score.getNet(pong_colors.GREEN, screen)
+        pong_score.getScorePlayer1(play1.score, pong_colors.WHITE, screen)
+        pong_score.getScorePlayer2(play2.score, pong_colors.WHITE, screen)
 
-def get_events(pad1, pad2):
+    def get_events(pad1, pad2):
     for event in pygame.event.get():
         if event.type == QUIT:
             pygame.quit()
